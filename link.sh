@@ -1,2 +1,4 @@
-ln -sf ~/.vimrc vimrc
-ln -sf ~/.config/sway sway
+dir=$PWD
+
+ln -sf $PWD/vimrc   ~/.vimrc
+ln -sf $PWD/sway    ~/.config/sway 
