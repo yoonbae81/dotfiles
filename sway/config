@@ -18,6 +18,7 @@ set $term alacritty
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu wofi --show=drun --line=5 --prompt=""
+# generate shortcuts for terminal apps in ~/.local/share/applications
 
 ### Output configuration
 #

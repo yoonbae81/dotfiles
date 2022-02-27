@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=vi
+Exec=alacritty -e vi
+Type=Application
+

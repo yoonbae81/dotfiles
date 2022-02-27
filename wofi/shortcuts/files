@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=files
+Exec=alacritty -e ranger
+Type=Application
+

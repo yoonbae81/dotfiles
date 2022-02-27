@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=top
+Exec=alacritty -e top
+Type=Application
+
