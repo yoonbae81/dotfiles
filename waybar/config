@@ -4,7 +4,7 @@
     "height": 24,
     "modules-left": ["sway/workspaces"],
     "modules-center": ["sway/window"],
-    "modules-right": ["tray", "pulseaudio", "network", "temperature", "cpu", "memory", "battery", "clock", "custom/germany", "custom/japan"],
+    "modules-right": ["tray", "pulseaudio", "network", "temperature", "cpu", "memory", "battery", "clock", "custom/korea", "custom/uae"],
     "sway/workspaces": {
         "disable-scroll": true,
         "disable-click": true,
@@ -15,14 +15,14 @@
     "clock": {
         "format": "{:%a %Y %b %d %R}"
     },
-    "custom/japan": {
+    "custom/korea": {
         "format": "{}",
-        "exec": "TZ=Asia/Tokyo date \"+%H:%M %Z\"",
+        "exec": "TZ=Asia/Seoul date \"+%H:%M %Z\"",
         "interval": 30,
     },
-    "custom/germany": {
+    "custom/uae": {
         "format": "{}",
-        "exec": "TZ=Europe/Berlin date \"+%H:%M %Z\"",
+        "exec": "TZ=Asia/Dubai date \"+%H:%M %Z\"",
         "interval": 30,
     },
     "cpu": {
@@ -32,7 +32,7 @@
         "format": " {}%"
     },
     "temperature": {
-        "critical-threshold": 75,
+        "critical-threshold": 35,
         "format": " {temperatureC}°C"
     },
     "battery": {
