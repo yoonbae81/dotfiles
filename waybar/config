@@ -13,17 +13,7 @@
         "spacing": 10,
     },
     "clock": {
-        "format": "{:%H:%M %a %d %b %Y %R}"
-    },
-    "custom/korea": {
-        "format": "{}",
-        "exec": "TZ=Asia/Seoul date \"+%H:%M\"",
-        "interval": 30,
-    },
-    "custom/uae": {
-        "format": "{}",
-        "exec": "TZ=Asia/Dubai date \"+%H:%M\"",
-        "interval": 30,
+        "format": "{:%a %d %b %Y %R}"
     },
     "cpu": {
         "format": " {usage}%"
