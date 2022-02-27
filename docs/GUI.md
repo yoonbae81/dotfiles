@@ -43,6 +43,7 @@ $ sudo pacman -S firefox jack2 noto-fonts noto-fonts-cjk
 $ git clone https://aur.archlinux.org/kime.git
 $ cd kime
 $ makepkg -si
+$ sudo mkdir -p /etc/xdg/kime
 $ sudo cp /usr/share/doc/kime/default_config.yaml /etc/xdg/kime/config.yaml
 ```
 
