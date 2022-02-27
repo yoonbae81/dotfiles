@@ -15,13 +15,13 @@ $ /usr/share/oh-my-zsh/tools/install.sh
 $ git clone https://aur.archlinux.org/zsh-theme-powerlevel10k-git.git
 $ cd zsh-theme-powerlevel10k-git
 $ makepkg -si
+$ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 - [Meslo font](https://aur.archlinux.org/packages/ttf-meslo-nerd-font-powerlevel10k)
 ```
 $ git clone https://aur.archlinux.org/ttf-meslo-nerd-font-powerlevel10k.git
 $ cd ttf-meslo-nerd-font-powerlevel10k
 $ makepkg -si
-$ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 
 ## [ranger](https://wiki.archlinux.org/title/ranger)
