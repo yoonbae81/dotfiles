@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=poweroff
-Exec=systemctl poweroff -f
+Exec=systemctl poweroff -i
 Type=Application
 
