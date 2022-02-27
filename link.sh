@@ -9,6 +9,7 @@ ln -sf $PWD/wgetrc      ~/.wgetrc
 
 mkdir -p ~/.config
 ln -sf $PWD/sway        ~/.config
+ln -sf $PWD/wofi        ~/.config
 ln -sf $PWD/waybar      ~/.config
 ln -sf $PWD/alacritty   ~/.config
 ln -sf $PWD/ranger      ~/.config
