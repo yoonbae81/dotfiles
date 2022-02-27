@@ -8,4 +8,5 @@ ln -sf $PWD/vimrc       ~/.vimrc
 ln -sf $PWD/wgetrc      ~/.wgetrc
 
 mkdir -p ~/.config
-ln -sf $PWD/sway        ~/.config/sway 
+ln -sf $PWD/sway        ~/.config/sway
+ln -sf $PWD/fontconfig  ~/.config/fontconfig
