@@ -21,6 +21,7 @@ $ makepkg -si
 $ git clone https://aur.archlinux.org/ttf-meslo-nerd-font-powerlevel10k.git
 $ cd ttf-meslo-nerd-font-powerlevel10k
 $ makepkg -si
+$ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 
 ## [ranger](https://wiki.archlinux.org/title/ranger)
