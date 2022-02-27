@@ -4,7 +4,7 @@
     "height": 24,
     "modules-left": ["sway/workspaces"],
     "modules-center": ["sway/window"],
-    "modules-right": ["tray", "pulseaudio", "network", "temperature", "cpu", "memory", "battery", "clock", "custom/korea", "custom/uae"],
+    "modules-right": ["tray", "pulseaudio", "network", "temperature", "cpu", "memory", "battery", "clock"],
     "sway/workspaces": {
         "disable-scroll": true,
         "disable-click": true,
@@ -13,7 +13,7 @@
         "spacing": 10,
     },
     "clock": {
-        "format": "{:%a %Y %b %d %R}"
+        "format": "{:%H:%M %a %d %b %Y %R}"
     },
     "custom/korea": {
         "format": "{}",
