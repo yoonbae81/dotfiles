@@ -9,4 +9,5 @@ ln -sf $PWD/wgetrc      ~/.wgetrc
 
 mkdir -p ~/.config
 ln -sf $PWD/sway        ~/.config/sway
+ln -sf $PWD/ranger      ~/.config/ranger
 ln -sf $PWD/fontconfig  ~/.config/fontconfig
