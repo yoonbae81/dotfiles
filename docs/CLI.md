@@ -7,6 +7,7 @@
 $ git clone https://aur.archlinux.org/oh-my-zsh-git.git
 $ cd oh-my-zsh-git
 $ makepkg -si
+$ /usr/share/oh-my-zsh/tools/install.sh
 ```
 
 - [powerlevel10k](https://github.com/romkatv/powerlevel10k)
