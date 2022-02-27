@@ -1,4 +1,4 @@
-dir=$PWD
+#!/bin/bash
 
 ln -sf $PWD/zprofile    ~/.zprofile
 ln -sf $PWD/xprofile    ~/.xprofile
