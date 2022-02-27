@@ -1,6 +1,7 @@
 dir=$PWD
 
 ln -sf $PWD/zprofile    ~/.zprofile
+ln -sf $PWD/xprofile    ~/.xprofile
 ln -sf $PWD/vimrc       ~/.vimrc
 ln -sf $PWD/wgetrc      ~/.wgetrc
 
