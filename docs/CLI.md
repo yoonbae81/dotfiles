@@ -2,14 +2,14 @@
 
 ## zsh
 
-- [oh-my-zsh](https://aur.archlinux.org/packages/oh-my-zsh-git) 
+- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) 
 ```
 $ git clone https://aur.archlinux.org/oh-my-zsh-git.git
 $ cd oh-my-zsh-git
 $ makepkg -si
 ```
 
-- [powerlevel10k](https://aur.archlinux.org/packages/zsh-theme-powerlevel10k-git)
+- [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ```
 $ git clone https://aur.archlinux.org/zsh-theme-powerlevel10k-git.git
 $ cd zsh-theme-powerlevel10k-git
