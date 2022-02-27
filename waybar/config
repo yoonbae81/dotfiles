@@ -17,12 +17,12 @@
     },
     "custom/korea": {
         "format": "{}",
-        "exec": "TZ=Asia/Seoul date \"+%H:%M %Z\"",
+        "exec": "TZ=Asia/Seoul date \"+%H:%M\"",
         "interval": 30,
     },
     "custom/uae": {
         "format": "{}",
-        "exec": "TZ=Asia/Dubai date \"+%H:%M %Z\"",
+        "exec": "TZ=Asia/Dubai date \"+%H:%M\"",
         "interval": 30,
     },
     "cpu": {
