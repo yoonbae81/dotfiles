@@ -16,7 +16,7 @@ Note that XWayland provides backwards compatibility for applications that still 
 ## Compositor: [Sway](https://github.com/swaywm/sway), tiling compositor
 
 ```
-$ sudo pacman -S swayalacritty waybar wofi noto-fonts
+$ sudo pacman -S sway alacritty waybar wofi
 ```
 
 ### Remap CapsLock as Ctrl
@@ -29,7 +29,7 @@ sway
 ## Browser
 
 ```
-$ sudo pacman -S firefox jack2 noto-fonts-cjk
+$ sudo pacman -S firefox jack2 noto-fonts noto-fonts-cjk
 
 ```
 
