@@ -15,5 +15,6 @@ ln -sf $PWD/alacritty   ~/.config
 ln -sf $PWD/ranger      ~/.config
 ln -sf $PWD/fontconfig  ~/.config
 
+mkdir -p ~/.local/share/applications
 ln -sf $PWD/wofi/shortcuts ~/.local/share/applications
 
