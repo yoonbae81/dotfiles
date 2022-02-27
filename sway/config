@@ -219,9 +219,5 @@ bar {
     }
 }
 
-intput type:keyboard {
-    xkb_options caps:lctrl
-}
-
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
