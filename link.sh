@@ -7,5 +7,5 @@ ln -sf $PWD/aliases     ~/.aliases
 ln -sf $PWD/vimrc       ~/.vimrc
 ln -sf $PWD/wgetrc      ~/.wgetrc
 
-mkdir ~/.config
+mkdir -p ~/.config
 ln -sf $PWD/sway        ~/.config/sway 
