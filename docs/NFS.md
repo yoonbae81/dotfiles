@@ -13,6 +13,12 @@
 /src/nfs 192.168.0.0/24(rw,sync,crossmnt,fsid=0)
 ```
 
+- Prepare a writable directory called `inbox`.
+```
+# mkdir -pv /srv/nfs/inbox
+# chmod 777 /srv/nfs/inbox
+```
+
 - To view the current loaded exports
 ```
 # exportfs -v
