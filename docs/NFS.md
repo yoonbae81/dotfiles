@@ -7,9 +7,9 @@
 
 ## Server
 
-- `/etc/exports.d/inbox.exports`:
+- `/etc/exports.d/root.exports`:
 ```
-/src/nfs/inbox 192.168.0.0/24(rw,sync)
+/src/nfs 192.168.0.0/24(rw,sync,crossmnt,fsid=0)
 ```
 
 - Re-export shared items:
@@ -38,5 +38,5 @@ Prepare a directory to mount the exported.
 
 Mount 
 ```
-# mount [SERVER]:/inbox /mnt/[SERVER]
+# mount [SERVER]:/ /mnt/[SERVER]
 ```
