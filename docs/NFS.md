@@ -38,7 +38,17 @@ Prepare a directory to mount the exported.
 # mkdir -p /mnt/[SERVER]
 ```
 
+Add mount options in `/etc/fstab`
+```
+# /etc/fstab
+pi:/	/mnt/pi     nfs     noauto,noexec,rw,sync,user,noatime,nodiratime,timeo=900,retrans=5,_netdev 0 0
+hp:/	/mnt/hp     nfs     noauto,noexec,rw,sync,user,noatime,nodiratime,timeo=900,retrans=5,_netdev 0 0
+mx:/	/mnt/mx     nfs     noauto,noexec,rw,sync,user,noatime,nodiratime,timeo=900,retrans=5,_netdev 0 0
+```
+
 Mount 
 ```
 # mount [SERVER]:/ /mnt/[SERVER]
 ```
+
+
