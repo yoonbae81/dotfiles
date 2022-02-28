@@ -16,7 +16,7 @@ Note that XWayland provides backwards compatibility for applications that still 
 ## Compositor: [Sway](https://github.com/swaywm/sway), tiling compositor
 
 ```
-$ sudo pacman -S sway alacritty waybar wofi
+$ sudo pacman -S sway swayidle alacritty waybar wofi
 ```
 
 ### Remap CapsLock as Ctrl
