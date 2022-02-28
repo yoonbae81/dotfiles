@@ -7,14 +7,10 @@
 
 ## Server
 
-- `/etc/exports.d/root.exports`:
+- Add directories exported to NFS clients and use `exportfs -arv` to reload.
 ```
+# /etc/exports
 /src/nfs 192.168.0.0/24(rw,sync,crossmnt,fsid=0)
-```
-
-- Re-export shared items:
-```
-# exportfs -arv
 ```
 
 - To view the current loaded exports
