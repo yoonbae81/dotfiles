@@ -95,7 +95,7 @@ inoremap jk <Esc>
 
 " Save
 nnoremap <C-S> :w<CR>
-inoremap <C-S> <ESC>:w<CR>l
+inoremap <C-S> <ESC>:w<CR>
 vnoremap <C-S> <ESC>:w<CR>
 
 " Split
@@ -111,6 +111,12 @@ nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
+
+" Timestamp
+nmap <F2> i<C-R>=strftime("%Y-%m-%d %I:%M")<CR><Esc>
+imap <F2> <C-R>=strftime("%Y-%m-%d %I:%M")<CR>
+nmap <F3> i<C-R>=strftime("%Y%m%d%I%M")<CR><Esc>
+imap <F3> <C-R>=strftime("%Y%m%d%I%M")<CR>
 
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " Plugin Installation
@@ -215,6 +221,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-cucumber'
+
+" Markdown support
+" https://github.com/preservim/vim-markdown
+Plugin 'godlygeek/tabular'
+Plugin 'preservim/vim-markdown'
 
 if iCanHazVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
