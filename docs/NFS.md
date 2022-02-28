@@ -24,6 +24,19 @@
 
 - Enable Service
 ```
-$ sudo systemctl enable nfs-server
+# systemctl enable nfs-server
+# systemctl start nfs-server
 ```
 
+
+## Client
+
+Prepare a directory to mount the exported.
+```
+# mkdir -p /mnt/[SERVER]
+```
+
+Mount 
+```
+# mount [SERVER]:/inbox /mnt/[SERVER]
+```
