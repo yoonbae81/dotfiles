@@ -10,8 +10,9 @@
 - Add directories exported to NFS clients and use `exportfs -arv` to reload.
 ```
 # /etc/exports
-/src/nfs      192.168.0.0/24(rw,sync,crossmnt,fsid=0)
-/src/nfs/home 192.168.0.0/24(rw,sync)
+/src/nfs       192.168.0.0/24(rw,sync,crossmnt,fsid=0)
+/src/nfs/inbox 192.168.0.0/24(rw,sync)
+/src/nfs/home  192.168.0.0/24(rw,sync)
 ```
 ```
 # /etc/fstab
