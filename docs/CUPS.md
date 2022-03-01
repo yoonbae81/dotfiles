@@ -3,25 +3,11 @@
 
 
 ```
-
-Listen 0.0.0.0:631
-<Location />
-    Order allow,deny
-    Allow localhost
-    Allow from 192.168.0.*
-    Allow from 10.0.*.*
-</Location>
-
-<Location /admin>
-    Order allow,deny
-    Allow localhost
-    Allow from 192.168.0.*
-    Allow from 10.0.*.*
-</Location>
+# cupsctl --remote-admin --remote-any --share-printers
 ```
 
 
 
 
 ### References
-- https://serverfault.com/questions/836266/how-can-i-enable-remote-access-to-the-admin-page-in-cups
+- https://askubuntu.com/questions/23936/how-do-you-administer-cups-remotely-using-the-web-interface
