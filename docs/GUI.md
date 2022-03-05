@@ -16,7 +16,7 @@ Note that XWayland provides backwards compatibility for applications that still 
 ## Compositor: [Sway](https://github.com/swaywm/sway), tiling compositor
 
 ```
-$ sudo pacman -S sway alacritty waybar wofi
+$ sudo pacman -S sway swayidle alacritty waybar wofi
 ```
 
 ### Remap CapsLock as Ctrl
@@ -47,6 +47,33 @@ $ sudo mkdir -p /etc/xdg/kime
 $ sudo cp /usr/share/doc/kime/default_config.yaml /etc/xdg/kime/config.yaml
 ```
 
+## Clipboard
+
+[wl-clipboard](https://github.com/bugaevc/wl-clipboard) lets let you easily copy data between the clipboard and Unix pipes, sockets, files and so on.
+```
+$ sudo pacman -S wl-clipboard
+
+# copy a simple text message
+$ wl-copy Hello world!
+
+# copy the list of files in Downloads
+$ ls ~/Downloads | wl-copy
+
+# copy an image file
+$ wl-copy < ~/Pictures/photo.png
+
+# paste to a file
+$ wl-paste > clipboard.txt
+
+# grep each pasted word in file source.c
+$ for word in $(wl-paste); do grep $word source.c; done
+
+# copy the previous command
+$ wl-copy "!!"
+
+# replace the current selection with the list of types it's offered in
+$ wl-paste --list-types | wl-copy
+```
 
 ## Install graphic drivers for Xorg (if necessary)
 
