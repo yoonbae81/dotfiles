@@ -36,7 +36,7 @@ $ sudo pacman -S firefox jack2 noto-fonts noto-fonts-cjk
 
 ## Screenshot
 ```
-# pacman -S slurp grim
+# pacman -S slurp grim imv
 ```
 
 
