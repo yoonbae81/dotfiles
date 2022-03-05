@@ -1,0 +1,2 @@
+bindsym F6 exec brightnessctl set 10%-
+bindsym F7 exec brightnessctl set +10%
