@@ -18,6 +18,7 @@ set $term alacritty
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu wofi --show=drun --line=5 --prompt=""
+set $screenshot slurp | grim -g - `date +"%Y%m%d%H%M%S"`.png
 # generate shortcuts for terminal apps in ~/.local/share/applications
 
 ### Output configuration
@@ -76,6 +77,9 @@ input type:touchpad {
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+    # Screenshot
+    bindsym $mod+Shift+s exec $screenshot
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
