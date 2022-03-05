@@ -87,3 +87,4 @@ $ wl-paste --list-types | wl-copy
 ## References
 
 - https://www.fosskers.ca/en/blog/wayland
+- https://grimoire.science/working-with-wayland-and-sway/ 
