@@ -1,11 +1,15 @@
 
 ## Backlight
 
+Install a package
 ```
-# pacman acpilight
-# xbacklight -dec 10
-# xbacklight +dec 10
+# sudo pacman -S brightnessctl
+```
 
+Configure Sway
+```
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 ```
 
 ### References
