@@ -7,7 +7,7 @@ Wayland is a display server protocol and the potential successor of the X Window
 ### Installation
 
 ```
-$ sudo pacman -S wayland xorg-xwayland
+$ sudo pacman -S wayland xorg-xwayland noto-fonts noto-fonts-cjk
 ```
 Note that XWayland provides backwards compatibility for applications that still don't suport Wayland.
 
@@ -29,8 +29,9 @@ sway
 ## Browser
 
 ```
-$ sudo pacman -S firefox jack2 noto-fonts noto-fonts-cjk
-
+$ github clone https://aur.archlinux.org/microsoft-edge-stable-bin.git
+$ cd microsoft-edge-stable-bin
+$ makepkg -si
 ```
 
 
