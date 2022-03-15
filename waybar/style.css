@@ -6,8 +6,8 @@
 }
 
 window#waybar {
-  background: transparent;
-  color: black;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
 }
 
 #window {
@@ -23,12 +23,12 @@ window#waybar {
 #workspaces button {
   padding: 0 5px;
   background: transparent;
-  color: black;
+  color: white;
   border-top: 2px solid transparent;
 }
 
 #workspaces button.focused {
-  color: black;
+  color: white;
   border-top: 2px solid white;
 }
 
