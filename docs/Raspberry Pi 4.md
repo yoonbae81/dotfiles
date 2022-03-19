@@ -41,3 +41,4 @@ https://wiki.archlinux.org/title/transmission#Choosing_a_user
 
 ### References
 - https://askubuntu.com/questions/23936/how-do-you-administer-cups-remotely-using-the-web-interface
+- https://www.instructables.com/How-to-BackUp-and-Shrink-Your-Raspberry-Pi-Image/
