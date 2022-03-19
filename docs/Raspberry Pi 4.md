@@ -1,5 +1,20 @@
 # Raspberry Pi 4
 
+## Wifi
+
+Generate `/etc/wpa_supplicant/wpa_supplicant-wlan0.conf` in accordance with [Wiki](https://wiki.archlinux.org/title/Wpa_supplicant), and enable systemd units as follows:
+```
+# systemctl enable wpa_supplicant@wlan0
+# systemctl start systemd-networkd
+# systemctl start systemd-resolved
+# systemctl start dhcpcd
+```
+
+
+### Reference
+- https://wiki.archlinux.org/title/Wpa_supplicant
+
+
 ## Printer Sharing
 
 Install CUPS
