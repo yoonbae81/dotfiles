@@ -26,9 +26,7 @@ $ sudo pacman -S sway swayidle alacritty waybar wofi
 
 ### Remap CapsLock as Ctrl
 ```
-#!/bin/bash
 export XKB_DEFAULT_OPTIONS=ctrl:nocaps,
-sway
 ```
 
 ## Browser
