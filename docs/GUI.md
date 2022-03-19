@@ -18,8 +18,6 @@ $ sudo pacman -S xorg-xhost
 $ xhost si:localhost:root
 ```
 
-xhost si:localuser:root
-
 ## Compositor: [Sway](https://github.com/swaywm/sway), tiling compositor
 
 ```
