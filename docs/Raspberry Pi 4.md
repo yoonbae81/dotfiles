@@ -17,9 +17,9 @@ Generate `/etc/wpa_supplicant/wpa_supplicant-wlan0.conf` in accordance with [Wik
 
 ## Printer Sharing
 
-Install CUPS
+Install CUPS and filters
 ```
-# pacman -S cups
+# pacman -S cups foomatic-db foomatic-db-ppds
 # cupsctl --remote-admin --remote-any --share-printers
 ```
 
