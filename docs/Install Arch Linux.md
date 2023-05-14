@@ -10,7 +10,7 @@
 
 ### Prepare partition
 
-Assume ESP (EFI System Partition) is already located and will be shared with the other operatin system in the machien.
+Assume ESP (EFI System Partition) is already located and will be shared with the other operating systems.
 
 ```
 # fdisk /dev/nvme0n1
