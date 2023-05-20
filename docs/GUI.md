@@ -7,7 +7,7 @@ Wayland is a display server protocol and the potential successor of the X Window
 ### Installation
 
 ```
-$ sudo pacman -S wayland xorg-xwayland noto-fonts noto-fonts-cjk
+$ sudo pacman -S wayland xorg-xwayland polkit noto-fonts noto-fonts-cjk
 ```
 Note that XWayland provides backwards compatibility for applications that still don't suport Wayland.
 

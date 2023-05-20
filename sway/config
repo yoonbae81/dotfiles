@@ -9,9 +9,8 @@ set $down j
 set $up k
 set $right l
 #
-# Your preferred terminal emulator
-#set $term foot
 set $term alacritty
+set $browser firefox
 #
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -69,14 +68,15 @@ input type:touchpad {
 #
 # Basics:
 #
-    # Start a terminal
+    # Start applications
     bindsym $mod+Return exec $term
+    bindsym $mod+w exec $browser
 
     # Kill focused window
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+Space exec $menu
 
     # Screenshot
     bindsym $mod+Shift+s exec $screenshot
@@ -155,7 +155,7 @@ input type:touchpad {
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
+    bindsym $mod+t layout tabbed
     bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
@@ -165,7 +165,7 @@ input type:touchpad {
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    bindsym $mod+m focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
