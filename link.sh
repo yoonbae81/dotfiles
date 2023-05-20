@@ -9,6 +9,7 @@ ln -sf $PWD/vimrc       ~/.vimrc
 ln -sf $PWD/wgetrc      ~/.wgetrc
 
 mkdir -p ~/.config
+ln -sf $PWD/nvim	~/.config
 ln -sf $PWD/fish 	~/.config
 ln -sf $PWD/sway        ~/.config
 ln -sf $PWD/wofi        ~/.config
