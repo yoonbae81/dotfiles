@@ -1,2 +1,2 @@
 exec kime
-exec microsoft-edge-stable
+exec obsidian --enable-features=UseOzonePlatform --ozone-platform=wayland

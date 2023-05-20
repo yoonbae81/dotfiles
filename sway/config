@@ -14,6 +14,7 @@ set $right l
 
 set $term alacritty
 set $browser firefox
+set $explorer alacritty -e ranger
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -21,6 +22,7 @@ set $browser firefox
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu wofi --show=drun --line=8 --prompt=""
 set $screenshot slurp | grim -g - `date +"%Y%m%d%H%M%S"`.png
+
 # generate shortcuts for terminal apps in ~/.local/share/applications
 
 ### Output configuration
@@ -66,22 +68,15 @@ input type:touchpad {
     natural_scroll enabled 
 }
 
-
 ### Key bindings
 #
 # Basics:
 #
-    # Start applications
     bindsym $mod+Return exec $term
-    bindsym $mod+w exec $browser
-
-    # Kill focused window
-    bindsym $mod+Shift+q kill
-
-    # Start your launcher
     bindsym $mod+Space exec $menu
-
-    # Screenshot
+    bindsym $mod+w exec $browser
+    bindsym $mod+e exec $explorer
+    bindsym $mod+Shift+q kill
     bindsym $mod+Shift+s exec $screenshot
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -156,9 +151,9 @@ input type:touchpad {
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+t layout tabbed
-    bindsym $mod+e layout toggle split
+    bindsym $mod+Alt+s layout stacking
+    bindsym $mod+Alt+t layout tabbed
+    bindsym $mod+Alt+e layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen

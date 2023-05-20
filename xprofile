@@ -1,6 +1,0 @@
-export GTK_IM_MODULE=kime
-export QT_IM_MODULE=kime
-export XMODIFIERS=@im=kime
-export $(/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator)
-
-setxkbmap -option ctrl:nocaps
