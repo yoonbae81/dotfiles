@@ -1,52 +1,69 @@
 {
-    "layer": "top",
     "position": "bottom",
-    "height": 25,
+    "height": 15,
+    "layer": "top",
+    "exclusive": true,
+    "passtrough": false,
+    "gtk-layer-shell": true,
+
     "modules-left": ["sway/workspaces"],
     "modules-center": ["sway/window"],
-    "modules-right": ["tray", "cpu", "memory", "pulseaudio", "battery", "network", "clock"],
+    "modules-right": ["tray", "pulseaudio", "battery", "network", "clock"],
+
     "sway/workspaces": {
         "disable-scroll": true,
         "disable-click": true,
     },
+
     "tray": {
-        "spacing": 10,
+        "icon-size": 12,
+        "tooltip": false,
+        "spacing": 10
     },
-    "clock": {
-        "format": "{:%a %d %b %Y %R}"
+
+    "pulseaudio": {
+        "format": "🔊 {volume}%",
+        "tooltip": false,
+        "format-muted": "🔊 N/A",
+        "on-click": "changeVolume toggle",
+        "on-scroll-up": "changeVolume 5%+",
+        "on-scroll-down": "changeVolume 5%-",
+        "scroll-step": 5
     },
-    "cpu": {
-        "format": " {usage}%"
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "tooltip": false,
+        "format-source": "{volume}",
+        "format-source-muted": "Muted",
+        "on-click": "amixer set Capture toggle",
+        "on-scroll-up": "amixer set Capture 5%+",
+        "on-scroll-down": "amixer set Capture 5%-",
+        "scroll-step": 5
     },
-    "memory": {
-        "format": " {}%"
+
+    "network": {
+	"format-wifi": "📡 {essid} {signalStrength}%",
+	"format-ethernet": "📡 {signalStrength}%",
+	"tooltip-format": "{No IP}",
+	"format-disconnected": "📡 N/A"
     },
-    "temperature": {
-        "critical-threshold": 35,
-        "format": " {temperatureC}°C"
-    },
+
     "battery": {
         "bat": "BAT0",
-        "full-at": 95,
         "states": {
             "good": 95,
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+        "full-at": 95,
+	"format": "🔋 {capacity}%",
+	"format-charging": "🔌 {capacity}%",
+	"format-plugged": "🔌 {capacity}%"
     },
-    "network": {
-        "format-wifi": " {essid}",
-        "format-disconnected": "⚠ Disconnected"
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-muted": "",
-        "format-icons": {
-            "headphones": "",
-            "default": ["", ""]
-        },
-        "on-click": "pavucontrol"
-    },
+
+    "clock": {
+        "format": "{:%H:%M %a %d %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n\n<tt><small>{calendar}</small></tt>"
+    }
 }

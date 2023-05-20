@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ln -sf $PWD/bash_profile ~/.bash_profile
 ln -sf $PWD/zprofile    ~/.zprofile
 ln -sf $PWD/xprofile    ~/.xprofile
 ln -sf $PWD/aliases     ~/.aliases

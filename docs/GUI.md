@@ -7,7 +7,7 @@ Wayland is a display server protocol and the potential successor of the X Window
 ### Installation
 
 ```
-$ sudo pacman -S wayland xorg-xwayland polkit noto-fonts noto-fonts-cjk
+$ sudo pacman -S wayland xorg-xwayland polkit noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd ttf-roboto
 ```
 Note that XWayland provides backwards compatibility for applications that still don't suport Wayland.
 
@@ -21,7 +21,7 @@ $ xhost si:localhost:root
 ## Compositor: [Sway](https://github.com/swaywm/sway), tiling compositor
 
 ```
-$ sudo pacman -S sway swayidle alacritty waybar wofi
+$ sudo pacman -S sway swaylock swaybg swayidle alacritty waybar wofi
 ```
 
 ### Remap CapsLock as Ctrl
