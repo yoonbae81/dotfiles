@@ -18,8 +18,7 @@ bindsym $mod+Return exec $term
 set $menu wofi --show=drun --line=8 --prompt=""
 bindsym $mod+Space exec $menu
 
-#set $browser firefox
-set $browser microsoft-edge-stable
+set $browser firefox
 bindsym $mod+w exec $browser
 
 set $explorer alacritty -e ranger
