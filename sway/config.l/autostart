@@ -1,2 +1,1 @@
-exec kime
 exec obsidian --enable-features=UseOzonePlatform --ozone-platform=wayland

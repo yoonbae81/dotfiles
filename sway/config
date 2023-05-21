@@ -13,15 +13,22 @@ set $up k
 set $right l
 
 set $term alacritty
-set $browser firefox
-set $explorer alacritty -e ranger
+bindsym $mod+Return exec $term
 
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-# set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu wofi --show=drun --line=8 --prompt=""
+bindsym $mod+Space exec $menu
+
+#set $browser firefox
+set $browser microsoft-edge-stable
+bindsym $mod+w exec $browser
+
+set $explorer alacritty -e ranger
+bindsym $mod+e exec $explorer
+
 set $screenshot slurp | grim -g - `date +"%Y%m%d%H%M%S"`.png
+bindsym $mod+Shift+s exec $screenshot
+
+bindsym $mod+Shift+q kill
 
 # generate shortcuts for terminal apps in ~/.local/share/applications
 
@@ -72,13 +79,6 @@ input type:touchpad {
 #
 # Basics:
 #
-    bindsym $mod+Return exec $term
-    bindsym $mod+Space exec $menu
-    bindsym $mod+w exec $browser
-    bindsym $mod+e exec $explorer
-    bindsym $mod+Shift+q kill
-    bindsym $mod+Shift+s exec $screenshot
-
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -211,5 +211,6 @@ bar {
     swaybar_command waybar
 }
 
+exec kime
 include /etc/sway/config.d/*
 include "~/.config/sway/config.`hostnamectl hostname`/*"
