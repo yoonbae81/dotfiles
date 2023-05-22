@@ -43,10 +43,10 @@
     },
 
     "network": {
-	"format-wifi": "📡 {essid} {signalStrength}%",
-	"format-ethernet": "📡 {signalStrength}%",
-	"tooltip-format": "{No IP}",
-	"format-disconnected": "📡 N/A"
+    	"format-wifi": "📡 {signalStrength}%",
+    	"format-ethernet": "📡 {signalStrength}%",
+    	"tooltip-format": "{essid}",
+    	"format-disconnected": "📡 N/A"
     },
 
     "battery": {
@@ -57,13 +57,13 @@
             "critical": 15
         },
         "full-at": 95,
-	"format": "🔋 {capacity}%",
-	"format-charging": "🔌 {capacity}%",
-	"format-plugged": "🔌 {capacity}%"
+	    "format": "🔋 {capacity}%",
+	    "format-charging": "🔌 {capacity}%",
+	    "format-plugged": "🔌 {capacity}%"
     },
 
     "clock": {
-        "format": "{:%H:%M %a %d %b}",
+        "format": "⏲️ {:%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n\n<tt><small>{calendar}</small></tt>"
     }
 }
