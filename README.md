@@ -39,7 +39,7 @@ Scan wireless network and connect to it.
 ---------------------------------------
  *ESSID*          psk           ****
 
-[iwd]# station wlan0 connectl *ESSID*
+[iwd]# station wlan0 connect *ESSID*
 Type the network passphrase for *ESSID*psk.
 Passphrase:
 
@@ -64,6 +64,7 @@ Save configuration to permanant location without passphrase for security.
 # pacstrap /mnt iwd dhcpcd fish neovim
 # pacstrap /mnt man-db man-pages 
 # pacstrap /mnt intel-ucode
+# pacstrap /mnt amd-ucode
 
 # genfstab -U /mnt >> /mnt/etc/fstab
 ```
