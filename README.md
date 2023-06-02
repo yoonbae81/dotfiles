@@ -129,7 +129,7 @@ FallbackNTP=0.arch.pool.ntp.org ...
 > linux /vmlinuz-linux
 > initrd /intel-ucode.img
 > initrd /initramfs-linux.img
-> options root=/dev/disk/by-PARTUUID/[PARTUUID] init=/usr/lib/systemd/systemd rw quiet
+> options root=/dev/disk/by-partuuid/[PARTUUID] init=/usr/lib/systemd/systemd rw quiet
 > EOF
 ```
 
