@@ -78,7 +78,7 @@ Finally, base packages were installed, so let's enter into the system. The follo
 ### Add an user who can use sudo
 ```
 # passwd
-# useradd -m -g users -G wheel -s /bin/zsh [USER]
+# useradd -m -g users -G wheel -s /bin/fish [USER]
 # passwd [USER]
 # visudo
 ```
